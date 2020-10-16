@@ -18,11 +18,11 @@ if(isset($_POST['Valider']))
   $pourc=htmlspecialchars(trim($_POST['pourc']));
 
   //Date de demande ::
-  
+
   $query_dcongé = "UPDATE skills SET competent = '$comp', pourcentage = '$pourc'  WHERE id = '$id_modif' ";
 
     if(mysqli_query($con,$query_dcongé)){
-        echo "la competent est modifié";
+        echo "la competent est modifie";
     }
     header("Location:mod_skills.php");
 }
@@ -36,7 +36,7 @@ if(isset($_POST['Valider']))
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../../assets/css/formulaire.css">
-    
+
     <title>cp</title>
 </head>
 <body>
@@ -54,8 +54,8 @@ if(isset($_POST['Valider']))
 					<label for="pourcentage">pourcentage*</label><br>
 					<input id='pourcentage' class="field" type="text" name="pourc" ><br><br>
 				  </div>
-				  
-					  
+
+
 					  <div>
 					   <button class="btn" type="submit" name="Valider">Valider</button><br><br>
 					  </div>
@@ -66,7 +66,7 @@ if(isset($_POST['Valider']))
 			</div>
 		</div>
 	</div>
-  
+
 </body>
 
 </html>
