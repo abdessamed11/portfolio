@@ -22,7 +22,7 @@ if(isset($_POST['Valider']))
   $query_dcongé = "UPDATE skills SET competent = '$comp', pourcentage = '$pourc'  WHERE id = '$id_modif' ";
 
     if(mysqli_query($con,$query_dcongé)){
-        echo "la competent est modifie";
+        echo "la competent est modifie";s
     }
     header("Location:mod_skills.php");
 }
